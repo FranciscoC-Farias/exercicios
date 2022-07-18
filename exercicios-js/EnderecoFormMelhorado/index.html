@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorange</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <form id="form">
+      <h1>Valida CEP: </h1>
+      <div class="container">
+
+        <div class="div">
+          <label for="cep">CEP: </label>
+          <input type="text" name="cep" id="cep" maxlength="9" required> <!-- Campo Obrigatório  -->
+          <span class="erro obrigatorio"></span>
+        </div>
+
+        <div class="div">
+          <label for="logradouro">Rua: </label>
+          <input type="text" name="logradouro" id="logradouro" required> <!-- Campo Obrigatório  -->
+          <span class="erro obrigatorio"></span>
+        </div>
+
+        <div class="div">
+          <label for="numero">Número: </label>
+          <input type="number" name="numero" id="numero" maxlength="6" required> <!-- Campo Obrigatório  -->
+          <span class="erro obrigatorio" ></span>
+        </div>
+
+        <div class="div">
+          <label for="complemento">Complemento: </label>
+          <input type="text" name="complemento" id="complemento">
+          <span class="erro"></span>
+        </div>
+
+        <div class="div">
+          <label for="localidade">Cidade: </label>
+          <input type="text" name="localidade" id="localidade" required> <!-- Campo Obrigatório  -->
+          <span class="erro obrigatorio"></span>
+        </div>
+
+        <div>
+          <label for="uf">UF: </label>
+          <select name="uf" id="uf" required> <!--required -->
+            <option value="">Selecione</option>
+            <option value="ac">Acre (AC)</option>
+            <option value="al">Alagoas (AL)</option>
+            <option value="ap">Amapá (AP)</option>
+            <option value="am">Amazonas (AM)</option>
+            <option value="ba">Bahia (BA)</option>
+            <option value="ce">Ceará (CE)</option>
+            <option value="df">Distrito Federal (DF)</option>
+            <option value="es">Espírito Santo (ES)</option>
+            <option value="go">Goiás (GO)</option>
+            <option value="mt">Mato Grosso (MT)</option>
+            <option value="ms">Mato Grosso do Sul (MS)</option>
+            <option value="mg">Minas Gerais (MG)</option>
+            <option value="pa">Pará (PA)</option>
+            <option value="pb">Paraíba (PB)</option>
+            <option value="pr">Paraná (PR)</option>
+            <option value="pe">Pernambuco (PE)</option>
+            <option value="pi">Piauí (PI)</option>
+            <option value="rj">Rio de Janeiro (RJ)</option>
+            <option value="rn">Rio Grande do Norte (RN)</option>
+            <option value="rs">Rio Grande do Sul (RS)</option>
+            <option value="ro">Rondônia (RO)</option>
+            <option value="rr">Roraima (RR)</option>
+            <option value="sc">Santa Catarina (SC)</option>
+            <option value="sp">São Paulo (SP)</option>
+            <option value="se">Sergipe (SE)</option>
+            <option value="to">Tocantins (TO)</option>
+          </select>
+          <span class="erro obrigatorio" ></span>
+        </div>
+
+        <div class="div">
+          <label for="pais">Pais: </label>
+          <input type="text" name="pais" id="pais" value="Brasil">
+        </div>
+
+        <button type="submit" id="btnEnviar" class="btn">Enviar</button>
+      </div>
+    </form>
+
+    <script src="./js/validaNumero.js"></script>
+    <script src="./js/validacaoCustomizada.js" type="module"></script>
+    <script src="./js/main.js" type="module"></script>
+
+  </body>
+</html>
